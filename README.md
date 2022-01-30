@@ -3,7 +3,9 @@
 # <font style='color:red'>***advanced-multifunction-facade***</font>
 You can control user access from outside the called method, and you can also add listener classes before and after the method is called.
 
-### <font style='color:yellow'> How use this facade</font>
+### <font style='color:yellow'> How to install this facade?</font>
+    composer require hosseinsheikh/advanced-multifunction-facade
+### <font style='color:yellow'> How to use this facade?</font>
 - Create simple Facade:
 
       php artisan palpalsi:make-facade {Facade name}
