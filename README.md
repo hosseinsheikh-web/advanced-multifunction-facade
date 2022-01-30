@@ -7,7 +7,7 @@ You can control user access from outside the called method, and you can also add
     composer require hosseinsheikh/advanced-multifunction-facade
 ### <font style='color:yellow'> How to use this facade?</font>
 - Create simple Facade:
-
+      
       php artisan palpalasi:make-facade {Facade name}
 
 - Create simple Facade with check authorization:
