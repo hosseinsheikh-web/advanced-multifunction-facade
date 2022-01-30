@@ -1,0 +1,41 @@
+{
+    "name": "hosseinsheikh/advanced-multifunction-facade",
+    "description": "advanced multi function facade",
+    "license": "MIT",
+    "keywords": ["laravel", "laravel8-package", "laravel-package", "advanced-multifunction-facade"],
+    "license": "MIT",
+    "homepage": "https://github.com/hosseinsheikh-web/advanced-multifunction-facade",
+    "authors": [
+        {
+            "name": "Hossein Sheikh",
+            "email": "hosseinsheikh.web@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Palpalasi\\AdvancedMultifunctionFacade\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Palpalasi\\AdvancedMultifunctionFacade\\AdvancedMultifunctionFacadeServiceProvider"
+            ]
+        }
+    }
+}
