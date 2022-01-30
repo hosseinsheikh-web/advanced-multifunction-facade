@@ -1,0 +1,31 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Palpalasi\AdvancedMultifunctionFacade\Contracts\CheckAuthorizationContract;
+use Palpalasi\AdvancedMultifunctionFacade\Facade;
+
+class $CLASS_NAME$ extends Facade implements CheckAuthorizationContract
+{
+      // protected static $accessor = 'my-accessor';
+
+       public static function shouldBindTo($class)
+       {
+           static::$app->singleton(self::getFacadeAccessor(), $class);
+       }
+
+       public static function authorize()
+       {
+          // false is off
+          // true is on
+           return true;
+       }
+
+       public static function authorizeAndCalling()
+       {
+           // false is off
+           // true is on
+           return true;
+       }
+
+}

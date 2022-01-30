@@ -1,0 +1,15 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Palpalasi\AdvancedMultifunctionFacade\Facade;
+
+class $CLASS_NAME$ extends Facade
+{
+      // protected static $accessor = 'my-accessor';
+
+       public static function shouldBindTo($class)
+       {
+           static::$app->singleton(self::getFacadeAccessor(), $class);
+       }
+}

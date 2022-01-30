@@ -1,0 +1,34 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Palpalasi\AdvancedMultifunctionFacade\Contracts\CallingContract;
+use Palpalasi\AdvancedMultifunctionFacade\Facade;
+
+class $CLASS_NAME$ extends Facade implements CallingContract
+{
+      // protected static $accessor = 'my-accessor';
+
+       public static $calling_is_enable = true;
+       public static $called_is_enable = true;
+
+       public static function shouldBindTo($class)
+       {
+           static::$app->singleton(self::getFacadeAccessor(), $class);
+       }
+
+       public function calling()
+       {
+           return [
+               // "method" => Listener class,
+
+           ];
+       }
+
+       public function called()
+       {
+           return [
+               // "method" => Listener class,
+           ];
+       }
+}
