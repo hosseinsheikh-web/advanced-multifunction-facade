@@ -8,11 +8,11 @@ You can control user access from outside the called method, and you can also add
 ### <font style='color:yellow'> How to use this facade?</font>
 - Create simple Facade:
 
-      php artisan palpalsi:make-facade {Facade name}
+      php artisan palpalasi:make-facade {Facade name}
 
 - Create simple Facade with check authorization:
         
-        php artisan palpalsi:make-facade {Facade name} {option}
+        php artisan palpalasi:make-facade {Facade name} {option}
 
 - All options are:
   - -a or --authorize

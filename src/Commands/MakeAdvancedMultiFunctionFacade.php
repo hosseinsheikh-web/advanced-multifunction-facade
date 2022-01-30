@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputOption;
 
 class MakeAdvancedMultiFunctionFacade extends GeneratorCommand
 {
-    protected $name = 'palpalsi:make-facade {name}';
+    protected $name = 'palpalasi:make-facade {name}';
     protected $description = 'Create a new advanced multi function facade';
 
     /**
