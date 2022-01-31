@@ -75,7 +75,7 @@ class Facade extends LaravelFacade
         }
 
         if (! static::checkCallingAuthorization()) {
-            // return;
+            return;
             return \Mockery::mock();
             app()->bind($instance, function (){
                 dd(__FILE__);
