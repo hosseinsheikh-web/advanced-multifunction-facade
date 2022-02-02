@@ -28,6 +28,7 @@ class Facade extends LaravelFacade
     {
         return $next($request);
     }
+
     public static function shouldBindTo($class)
     {
         static::$app->singleton(self::getFacadeAccessor(), $class);
@@ -75,12 +76,7 @@ class Facade extends LaravelFacade
         }
 
         if (! static::checkCallingAuthorization()) {
-            return;
-            return \Mockery::mock();
-            app()->bind($instance, function (){
-                dd(__FILE__);
-            });
-           return;
+            return $instance instanceof Model ? $instance->where('id', 'avs') : null;
         }
 
         static::listenCalling();
