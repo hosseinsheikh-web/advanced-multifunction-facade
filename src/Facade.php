@@ -76,7 +76,8 @@ class Facade extends LaravelFacade
         }
 
         if (! static::checkCallingAuthorization()) {
-            return $instance instanceof Model ? $instance->where('id', 'avs') : null;
+            return null;
+            // return $instance instanceof Model ? $instance->where('id', 'avs') : null;
         }
 
         static::listenCalling();
