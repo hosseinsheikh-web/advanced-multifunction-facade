@@ -25,6 +25,5 @@ class AdvancedMultifunctionFacadeServiceProvider extends ServiceProvider
                 MakeAdvancedMultiFunctionFacade::class,
             ]);
         }
-
     }
 }
